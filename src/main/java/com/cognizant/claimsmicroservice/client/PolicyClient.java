@@ -16,7 +16,7 @@ import com.cognizant.claimsmicroservice.model.ProviderPolicy;
 /*Proxy for policy microservice 
  *4 end points
 */
-@FeignClient(name = "policy-microservice", url = "http://localhost:8010/policy")
+@FeignClient(name = "policy-microservice", url = "http://policy.ap-south-1.elasticbeanstalk.com/policy")
 public interface PolicyClient {
 
 	@RequestMapping(value = "getChainOfProviders/{policyId}", method = RequestMethod.GET)
